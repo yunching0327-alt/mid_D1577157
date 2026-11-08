@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Hiragino Sans GB", "Microsoft JhengHei", serif;
+    line-height: 1.85;
+    color: #3e3832; /* 復古深褐灰 */
+    background-color: #f4efe6; /* 仿舊紙張的暖米底色 */
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+main, header, nav, footer {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fdfbf7;
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid #dfd8c8;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+    color: #4a5446; /* 綠洲墨綠色 */
+    border-bottom: 2px solid #8a9681;
+    padding-bottom: 12px;
+    font-size: 1.85em;
+    font-weight: 700;
+}
+
+h2 {
+    color: #63574d; /* 歷史深褐色 */
+    margin-top: 32px;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+h3 {
+    color: #7a6e62;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+mark.reading-focus {
+    background-color: #e8dcc3; /* 復古重點螢光黃 */
+    padding: 0 4px;
+    border-radius: 2px;
+    color: #2b2927;
+}
+
+a {
+    color: #5c6b56; /* 綠洲系連結色 */
+    text-decoration: none;
+    border-bottom: 1px dashed #a4b39e;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #374232;
+    border-bottom-style: solid;
+    background-color: #eef2eb;
+}
+
+a:focus-visible {
+    outline: 2px solid #8a9681;
+    outline-offset: 3px;
+    border-radius: 1px;
+}
+
+#tips {
+    background-color: #f2f0e6;
+    border-left: 5px solid #8a9681;
+    padding: 20px 28px;
+    margin: 32px 0;
+    border-radius: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 28px 0;
+    font-size: 0.96em;
+}
+
+th, td {
+    border: 1px solid #d5cebf;
+    padding: 14px 18px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8e3d5;
+    color: #4a453f;
+    font-weight: 600;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #d5cebf;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.05);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+    height: 0;
+    overflow: hidden;
+    margin: 24px 0;
+    border-radius: 4px;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.05);
+}
+
+.video-container iframe,
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    main, header, nav, footer {
+        margin: 15px;
+        padding: 25px;
+    }
+}
